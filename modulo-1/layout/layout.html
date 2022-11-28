@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            border: 1px solid black;
+        }
+        article{
+            height: 500px;
+        }
+        aside{
+            float: right;
+        }
+        #col-1{
+            width: 70%;
+            display: inline-block;
+            margin: 0;
+        }
+        #col-2{
+            margin: 0;
+            width: 29.7%;
+            height: 520px;
+            display: inline-block;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Título da Página</h1>
+    </header>
+    <nav>
+        <a href="#a1">Artigo 1</a>
+        <a href="#a2">Artigo 2</a>
+        <a href="#a3">Artigo 3</a>
+    </nav>
+    <div>
+        <div id="col-1">
+            <section>Sou uma seção</section>
+            <article id="a1">Artigo 1</article>
+            <article id="a2">Artigo 2</article>
+            <article id="a3">Artigo 3</article>
+        </div>
+        <aside id="col-2">Estou ao lado</aside>
+
+    </div>
+    <footer>Sou o Rodapé</footer>
+</body>
+</html>
