@@ -6,42 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        .form{
-            border: 1px solid;
-            width: 50%;
-            display: inline-block;
-            position: relative;
-        }
-        h1{
-            text-align: center;
-        }
-        input{
-            display: inline-block;
-            width: 150px;
-            position: absolute;
-            right: 0;
-        }
-        label{
-            margin-right: 5px;
-        }
-        #nome{
-            width: 70%;
-        }
-        #rg{
-            width: 25%;
-        }
     </style>
 </head>
 <body>
     <form>
         <h1>Ficha cadastral</h1>
-        <div class="form">
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome">
-            <br>
-            <label for="rg">RG: </label>
-            <input type="text" id="rg">
-        </div>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome">
+        <br>
+        <label for="rg">RG: </label>
+        <input type="text" id="rg">
+        <label for="cpf">CPF: </label>
+        <input type="text" name="cpf" id="cpf">
+        <br>
+        <label for="endereco">Endereço: </label>
+        <input type="text" id="endereco">
+        <br>
+        <label for="sexo">Sexo: </label>
+        <select name="sexo" id="sexo">
+            <option value="-">-Selecionar-</option>
+            <option value="fem">Feminino</option>
+            <option value="masc">Masculino</option>
+            <option value="nbinario">Não binário</option>
+            <option value="nao">Prefiro não dizer</option>
+        </select>
+        <label for="data">Data de Nascimento: </label>
+        <input type="date" name="data" id="data">
+        <br>
+        <label for="civil">Situação Civil: </label>
+        <input type="radio" name="solteiro" id="solteiro">
+        <label for="solteiro">Solteiro(a)</label>
+        <input type="radio" name="casado" id="casado">
+        <label for="casado">Casado(a)</label>
+        <input type="radio" name="viuvo" id="viuvo">
+        <label for="viuvo">Viúvo(a)</label>
+        <br>
+        <button>Limpar dados</button>
     </form>
 </body>
 </html>
