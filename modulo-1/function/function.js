@@ -5,7 +5,7 @@ let nota4 = 5
 
 function media(nota1, nota2, nota3, nota4){
     let resultado = (nota1 + nota2 + nota3 + nota4) / 4
-    console.log(resultado)
+    return(resultado)
 }
 
 // console.log(media(7, 6, 8, 5))
