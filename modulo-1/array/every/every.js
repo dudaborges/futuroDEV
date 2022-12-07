@@ -1,0 +1,2 @@
+// retorna true or false
+
