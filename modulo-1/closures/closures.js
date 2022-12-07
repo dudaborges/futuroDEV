@@ -1,3 +1,5 @@
+// funções aninhadas
+// get obter e set editar
 let criaPet = function(nomeDoPet){
     return {
         getName: function(){
