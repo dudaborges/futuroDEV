@@ -1,3 +1,4 @@
+//Operador rest
 const soma = (... valores) => {
     let resultado = 0
     valores.forEach(valor => resultado += valor)
