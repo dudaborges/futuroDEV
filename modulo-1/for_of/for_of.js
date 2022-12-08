@@ -1,3 +1,4 @@
+// for of é uma função, não um método
 const alunos = [
     {nome: 'Maria', idade: 17},
     {nome: 'João', idade: 18},
