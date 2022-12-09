@@ -1,0 +1,1 @@
+let alunos = ["Maria", "João", "José", "Ana", "Júlia", "Pedro"]
