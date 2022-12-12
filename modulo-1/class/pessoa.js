@@ -1,5 +1,5 @@
 // constructor inicializa o objeto
-// programação orientada a objeto (POO)
+// estrutura de programação orientada a objeto (POO)
 class Pessoa{
     constructor(nome, sobrenome, idade){
         // o this inicializa
