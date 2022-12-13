@@ -6,7 +6,12 @@ class Salario{
     }
 
     adicionarAcrescimo(){
-        
-        return console.log(`O funcionário ${nome}, com o salário ${this.salario}, recebeu um acréscimo de ${this.acrescimo}`)
+        let total = (this.salario * this.acrescimo) + this.salario
+        return console.log(`O funcionário ${this.nome}, com o salário de ${this.salario}, recebeu um acréscimo de ${this.acrescimo} e ficou no total de ${total}`)
     }
 }
+
+const salario = new Salario("João", 5000, 0.2)
+
+console.log(salario)
+salario.adicionarAcrescimo()

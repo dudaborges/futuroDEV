@@ -3,6 +3,7 @@
 class Pessoa{
     constructor(nome, sobrenome, idade){
         // o this inicializa
+        // instanciar
         this.nome = nome
         this.sobrenome = sobrenome
         this.idade = idade
