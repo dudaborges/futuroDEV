@@ -10,6 +10,7 @@ const calculadora = function(salario){
     let novo = 0
 
     // se a expressão for verdadeira imprima isso
+    //break é para interromper a seção de um laço
     switch(true){
         case(salario <= 280): 
         aumento = salario * 0.2
