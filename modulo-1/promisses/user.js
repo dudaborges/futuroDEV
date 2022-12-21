@@ -1,5 +1,5 @@
 const mypromise = new Promise( (resolve, reject) => {
-    const user = "Maria"
+    const user = "Julia"
 
     if(user === "Maria"){
         resolve('Usuário encontrado')
