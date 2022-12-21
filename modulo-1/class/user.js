@@ -12,5 +12,5 @@ class User{
 
 // instanciar: inicializar o objeto
 const user = new User("Maria", "Borges")
-// chamar a function
+// chamada do método
 user.getFullName()
