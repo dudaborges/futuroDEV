@@ -10,6 +10,7 @@ const mypromise = new Promise( (resolve, reject) => {
 
 // then é então
 // no "dado" pode ser qualquer nome
+// then executa a promisse e retorna o dado dela, o resultado
 mypromise.then((dado) => {
     console.log(dado)
 }) 
