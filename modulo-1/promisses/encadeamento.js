@@ -11,6 +11,7 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise.then((dado) => {
     return dado.toUpperCase()
 })
+// retorna uma nova promise
 .then((dadoModificado) => {
     console.log(dadoModificado)
 })
