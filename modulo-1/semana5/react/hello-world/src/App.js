@@ -4,6 +4,8 @@ import TemplateExpressions from './components/TemplateExpressions';
 import OnClick from './components/OnClick';
 import OnChange from './components/OnChange';
 import OnSubmit from './components/OnSubmit';
+import OnKeyDown from './components/OnKeyDowm';
+import OnMouseOver from './components/OnMouseOver';
 
 function App() {
   const name = "Maria Eduarda"
@@ -14,8 +16,10 @@ function App() {
       <TemplateExpressions></TemplateExpressions>
       <PropsExample name={name} idade={idade} cidade={cidade}/>
       <OnClick />
-      {/* <OnChange /> */}
+      <OnChange />
       <OnSubmit />
+      <OnKeyDown />
+      <OnMouseOver />
     </div>
   );
 }

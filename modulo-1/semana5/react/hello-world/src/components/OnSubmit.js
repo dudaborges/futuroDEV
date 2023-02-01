@@ -2,6 +2,7 @@ const OnSubmit = () => {
 
     // para evitar que recarregue a página (e)
     const handleSubmit = e => {
+        // apenas o onsubmit é preciso colocar essa linha de código para não recarregar a página
         e.preventDefault()
         alert('You submitted the form!')
     } 
