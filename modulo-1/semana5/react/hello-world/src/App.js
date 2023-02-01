@@ -6,6 +6,7 @@ import OnChange from './components/OnChange';
 import OnSubmit from './components/OnSubmit';
 import OnKeyDown from './components/OnKeyDowm';
 import OnMouseOver from './components/OnMouseOver';
+import Counter from './components/Counter';
 
 function App() {
   const name = "Maria Eduarda"
@@ -20,6 +21,7 @@ function App() {
       <OnSubmit />
       <OnKeyDown />
       <OnMouseOver />
+      <Counter />
     </div>
   );
 }
