@@ -3,6 +3,7 @@ import PropsExample from './components/PropsExample';
 import TemplateExpressions from './components/TemplateExpressions';
 import OnClick from './components/OnClick';
 import OnChange from './components/OnChange';
+import OnSubmit from './components/OnSubmit';
 
 function App() {
   const name = "Maria Eduarda"
@@ -13,7 +14,8 @@ function App() {
       <TemplateExpressions></TemplateExpressions>
       <PropsExample name={name} idade={idade} cidade={cidade}/>
       <OnClick />
-      <OnChange />
+      {/* <OnChange /> */}
+      <OnSubmit />
     </div>
   );
 }
