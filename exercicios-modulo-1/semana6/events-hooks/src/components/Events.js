@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Events = () => {
+const Events = (props) => {
 
     const handleClick = () => {
-        alert('você clicou no botão!')
+        alert(`Você clicou no botão! :) O argumento é ${props.teste}`)
     }
 
     return(
