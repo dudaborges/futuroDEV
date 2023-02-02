@@ -7,6 +7,7 @@ import OnSubmit from './components/OnSubmit';
 import OnKeyDown from './components/OnKeyDowm';
 import OnMouseOver from './components/OnMouseOver';
 import Counter from './components/Counter';
+import RandomAdvice from './components/advice/RandomAdvice';
 
 function App() {
   const name = "Maria Eduarda"
@@ -22,6 +23,7 @@ function App() {
       <OnKeyDown />
       <OnMouseOver />
       <Counter />
+      <RandomAdvice />
     </div>
   );
 }
