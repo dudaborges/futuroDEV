@@ -9,6 +9,7 @@ import OnMouseOver from './components/OnMouseOver';
 import Counter from './components/Counter';
 import RandomAdvice from './components/advice/RandomAdvice';
 import SearchAdvice from './components/advice/SearchAdvice';
+import Colors from './components/Colors';
 
 function App() {
   const name = "Maria Eduarda"
@@ -26,6 +27,7 @@ function App() {
       <Counter />
       <RandomAdvice />
       <SearchAdvice />
+      <Colors />
     </div>
   );
 }
