@@ -4,7 +4,7 @@ const TemplateExpressions = () => {
     const pessoa = {
         nome: 'Maria Eduarda',
         idade: 17,
-        cidade: 'Florianópolis'
+        cidade: 'Florianópolis',
     }
 
     const perfil = 'https://avatars.githubusercontent.com/u/79697529?v=4'
