@@ -1,0 +1,8 @@
+.formData > * {
+    display: block;
+    margin: 10px;
+}
+
+.formData > input {
+    padding: 10px;
+}
