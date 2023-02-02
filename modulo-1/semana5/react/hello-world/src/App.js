@@ -10,6 +10,7 @@ import Counter from './components/Counter';
 import RandomAdvice from './components/advice/RandomAdvice';
 import SearchAdvice from './components/advice/SearchAdvice';
 import Colors from './components/useState/Colors';
+import HideShow from './components/useState/HideShow';
 
 function App() {
   const name = "Maria Eduarda"
@@ -28,6 +29,8 @@ function App() {
       <RandomAdvice />
       <SearchAdvice />
       <Colors />
+      <br />
+      <HideShow />
     </div>
   );
 }

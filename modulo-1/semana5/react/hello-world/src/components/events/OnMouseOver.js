@@ -1,4 +1,4 @@
-import gato from '../assets/gato.jpg'
+import gato from '../../assets/gato.jpg'
 const OnMouseOver = () => {
 
     const handleOnMouseOver = e => {
