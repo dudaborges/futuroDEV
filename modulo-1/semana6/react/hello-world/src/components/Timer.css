@@ -1,0 +1,30 @@
+.grid-timer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.center-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-time{
+    flex-direction: column;
+}
+
+div.clock{
+    width: 100px;
+    height: 120px;
+}
+
+img.clock{
+    width: 100%;
+}
+
+button.start{
+    margin-right: 0;
+    width: 100px;
+    background-color: rgb(125, 48, 48);
+}

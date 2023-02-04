@@ -1,0 +1,30 @@
+div.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+div.box{
+    width: 200px;
+    height: 200px;
+    background-color: darkgrey;
+    margin-bottom: 10px;
+}
+
+div.flexbox{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button:nth-child(3){
+    margin-right: 0;
+}
+
+.column-2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
