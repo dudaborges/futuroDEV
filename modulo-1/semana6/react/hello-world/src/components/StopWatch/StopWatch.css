@@ -28,3 +28,22 @@ button.start{
     width: 100px;
     background-color: rgb(125, 48, 48);
 }
+
+.stop-watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time{
+    margin-bottom: 10px;
+}
+
+.time > span {
+    font-size: 25px;
+}
+
+.btn{
+    width: 80px;
+}
