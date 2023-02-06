@@ -1,48 +1,50 @@
-import { useEffect, useState } from "react"
+import './User.css'
+
+import { useEffect, useState } from 'react';
 
 const AddUser = () => {
 
-    const [inputs, setInputs] = useState()
-    const [errors, setErrors] = useState()
-    const [people, setPeople] = useState()
+  const [inputs, setInputs] = useState();
+  const [errors, setErrors] = useState();
+  const [people, setPeople] = useState([]);
+  const [previousPeople, setPreviousPeople] = useState([]);
 
-    useEffect(() => {
-        const previousPeople = (localStorage.hasOwnProperty('people')) ? localStorage.getItem('people') : []
-    }, [])
+  useEffect(() => {
+    const previousPeople = (localStorage.hasOwnProperty('people')) ? JSON.parse(localStorage.getItem('people')) : [];
+    setPreviousPeople(previousPeople);
+  }, []);
 
-    useEffect(() => {
-        localStorage.setItem("people", JSON.stringify(people))
-    })
+  const handleChange = e => {
+    const name = e.target.name;
+    const value = e.target.value;
+    const error = value ? false : true;
+    setInputs({...inputs, [name]: value});
+    setErrors({...errors, [name]: error});
+  }
 
-    const handleChange = e => {
-        const name = e.target.name
-        const value = e.target.value
-        const error = value ? false : true
-        setInputs({...inputs, [name]: value})
-        setErrors({...inputs, [name]: error})
+  const handleSubmit = e => {
+    e.preventDefault();
+    setPeople([...people, inputs]);
+    localStorage.setItem("people", JSON.stringify([...previousPeople, ...people]));
+    const event = new Event('localStorageUpdated');
+    document.dispatchEvent(event);
+  }
 
-    }
-
-    const handleSubmit = e => {
-        e.preventDefault()
-        setPeople(...people, inputs)
-        const event = new Event('localStorageUpdated')
-        document.dispatchEvent(event)
-    }
-
-    return(
-        <form onSubmit={handleSubmit}>
-            <label>Name: </label>
-            <input type="text" name="name" onBlur={handleChange} />
-            {errors?.email && <span className='error'>Please fill the email input</span>}
-
-            <label>Age: </label>
-            <input type="number" name="age" onBlur={handleChange} />
-            {errors?.email && <span className='error'>Please fill the email input</span>}
-
-
-        </form>
-    )
+  return(
+    <form onSubmit={handleSubmit}>
+      <div className="formData">
+        <label>Name: </label> 
+        <input type="text" name="name" onBlur={handleChange}/>
+        {errors?.name && <span className='error'>Please fill the name input</span>}
+      </div>
+      <div className="formData">
+        <label>Age: </label>
+        <input type="number" name="age" onBlur={handleChange}/>
+        {errors?.age && <span className='error'>Please fill the age input</span>}
+      </div>
+      <button className="saveButton" type="submit">Save</button>
+    </form>
+  )
 }
 
-export default AddUser
+export default AddUser;

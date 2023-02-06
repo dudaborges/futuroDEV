@@ -1,27 +1,24 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Login from './components/Login/Login';
-import AddUser from './components/Users/AddUser'
+import AddUser from './components/Users/AddUser';
+import ShowUsers from './components/Users/ShowUsers';
 
 function App() {
 
-  const [people, setPeople] = useState([])
+  const [people, setPeople] = useState([]);
 
   useEffect(() => {
-    document.addEventListener('localStorageUpdated', handlePeople, false)
-  })
+    document.addEventListener('localStorageUpdated', handlePeople, false);
+  }, [])
 
   const handlePeople = () => {
-    setPeople(JSON.parse(localStorage.getItem('people')))
+    setPeople(JSON.parse(localStorage.getItem('people')));
   }
   return (
-    <>
-    <Login />
-    {people && }
-    <AddUser />
-    
-    </>
-    
+    <div>
+      <AddUser />
+      {people && <ShowUsers people={people} />}
+    </div>
   );
 }
 

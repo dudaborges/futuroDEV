@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const Counter = () => {
 
-    // useState é um hook
     const [counter, setCounter] = useState(0)
 
     const handleDecrement = () => {
