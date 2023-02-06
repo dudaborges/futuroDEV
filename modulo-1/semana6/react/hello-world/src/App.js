@@ -1,5 +1,6 @@
 import './App.css';
-import Colors from './components/Colors';
+import BuyItem from './components/BuyItem/BuyItem';
+import Colors from './components/Colors/Colors';
 import ReadMore from './components/ReadMore';
 import StopWatch from './components/StopWatch/StopWatch';
 
@@ -9,6 +10,7 @@ function App() {
     <ReadMore />
     <Colors />
     <StopWatch />
+    <BuyItem />
     </>
   );
 }

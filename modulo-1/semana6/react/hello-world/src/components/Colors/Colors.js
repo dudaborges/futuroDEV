@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import './Colors.css'
+import '../Colors/Colors.css'
 
 const Colors = () => {
 
@@ -20,7 +20,7 @@ const Colors = () => {
 
     return(
         <div className='container'>
-            <div  c lassName='column'>
+            <div  className='column'>
 
             <div className='column-1'>
                 {/* ref seria como um id no javascript puro. Pega um elemento de referência */}
