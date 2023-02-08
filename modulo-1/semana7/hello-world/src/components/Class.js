@@ -13,6 +13,10 @@ class Class extends React.Component{
         }
     }
 
+    componentWillUnmount(){
+        console.log('fui destruido')
+    }
+
     render(){
         return (
             <div>
