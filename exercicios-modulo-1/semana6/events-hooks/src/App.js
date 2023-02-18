@@ -1,14 +1,13 @@
 import './App.css';
-import Counter from './components/Counter';
-import Events from './components/Events';
+import Ex5e6ShoppingList from './components/Ex5e6ShoppingList';
+
+
 
 function App() {
-  const teste = 'teste'
 
   return (
     <>
-    <Events teste={teste} />
-    <Counter />
+    <Ex5e6ShoppingList />
     </>
   );
 }
