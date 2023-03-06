@@ -10,6 +10,19 @@ public class Nome {
 //       pega a última linha que foi digitada pelo o usuário
         nome = scanner.nextLine();
 
-        System.out.println("O nome digitado é " + nome);
+        System.out.println("Seja bem-vindo(a) " + nome);
+
+        System.out.println("Qual a sua idade?");
+
+        int idade;
+        idade = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Sua idade é " + idade + " anos");
+
+        if(idade >= 18){
+            System.out.println("Você é maior de idade!");
+        }else{
+            System.out.println("Você é menor de idade!");
+        }
     }
 }
