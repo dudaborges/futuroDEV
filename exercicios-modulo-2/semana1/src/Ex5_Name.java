@@ -1,8 +1,6 @@
-import java.util.Scanner;
 
 public class Ex5_Name {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         String[] names = new String[5];
         names[0] = "Maria";
