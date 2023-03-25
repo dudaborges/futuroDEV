@@ -12,5 +12,9 @@ public class Main {
 
         carro1.setModelo("Jeep Renegade");
         System.out.println(carro1.getModelo());
+
+        Aluno aluno1 = new Aluno(1L, "Maria Eduarda", "Santinho");
+        System.out.println(aluno1);
+        aluno1.setEstudou(70);
     }
 }
