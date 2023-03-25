@@ -16,5 +16,11 @@ public class Main {
         Aluno aluno1 = new Aluno(1L, "Maria Eduarda", "Santinho");
         System.out.println(aluno1);
         aluno1.setEstudou(70);
+
+        Pessoa pessoa1 = new Pessoa();
+        pessoa1.setNome("Maria Eduarda");
+        pessoa1.setSobrenome("Pereira Borges");
+        pessoa1.setMaiorDeIdade(18);
+        System.out.println(pessoa1);
     }
 }
