@@ -1,5 +1,5 @@
-public class Cavalo extends Animal {
-    public Cavalo(String nome, int idade) {
+public class Ex1_Cavalo extends Ex1_Animal {
+    public Ex1_Cavalo(String nome, int idade) {
         super(nome, idade);
     }
 

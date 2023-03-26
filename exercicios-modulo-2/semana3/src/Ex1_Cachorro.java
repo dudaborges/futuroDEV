@@ -1,6 +1,6 @@
-public class Cachorro extends Animal {
+public class Ex1_Cachorro extends Ex1_Animal {
 
-    public Cachorro(String nome, int idade) {
+    public Ex1_Cachorro(String nome, int idade) {
         super(nome, idade);
     }
 

@@ -1,8 +1,8 @@
-public class Animal {
+public class Ex2_Animal {
     private String nome;
     private int idade;
 
-    public Animal(String nome, int idade) {
+    public Ex2_Animal(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
     }
@@ -23,25 +23,20 @@ public class Animal {
         this.idade = idade;
     }
 
-    private void emitirSom(){
+    public void emitirSom(){
         System.out.println("Emitindo som");
     }
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "Ex2_Animal{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 '}';
     }
 
     public static void main(String[] args) {
-        Cachorro cachorro1 = new Cachorro("Bibi", 12);
-        Cavalo cavalo1 = new Cavalo("Jully", 2);
-        Preguica preguica1 = new Preguica("Barney", 3);
-
-        System.out.println(cachorro1);
-        cachorro1.correr();
-        preguica1.subirArvores();
+        Ex2_Preguica preguica1 = new Ex2_Preguica("Juju", 2);
+        preguica1.emitirSom();
     }
 }
