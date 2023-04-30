@@ -39,4 +39,8 @@ public class AlunoService {
             alunoRepository.delete(aluno);
         }
     }
+
+    public static boolean validarCpf(String cpf) {
+        return cpf != null && cpf.length() == 11;
+    }
 }

@@ -13,4 +13,8 @@ public class Aluno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     public String nome;
+    public String cpf;
+    public Double nota1;
+    public Double nota2;
+    public Double nota3;
 }

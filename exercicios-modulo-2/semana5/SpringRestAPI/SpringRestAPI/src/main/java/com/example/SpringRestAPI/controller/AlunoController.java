@@ -60,4 +60,24 @@ public class AlunoController {
             return ResponseEntity.status(406).build();
         }
     }
+
+    @GetMapping("/cpf")
+    public ResponseEntity<List<Aluno>> buscarCpf(@RequestParam("cpf") String cpf) {
+        if ( !AlunoService.validarCpf(cpf) ) {
+            return ResponseEntity.badRequest().build();
+        }
+        List<Aluno> alunos = alunoRepository.findByCpf(cpf);
+        return ResponseEntity.ok(alunos);
+    }
+
+    @PostMapping("/media")
+    public ResponseEntity<Double> calcularMedia(@RequestParam("nota1") Double nota1,
+                                                @RequestParam("nota2") Double nota2,
+                                                @RequestParam("nota3") Double nota3){
+        if (nota1 == null || nota2 == null || nota3 == null) {
+            return ResponseEntity.badRequest().build();
+        }
+        double media = (nota1 + nota2 + nota3) / 3.0;
+        return ResponseEntity.ok(media);
+    }
 }
