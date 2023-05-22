@@ -5,8 +5,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/imc")
 public class IMCController {
-    @PostMapping("/imc")
+    @PostMapping
     public ResponseEntity<?> calcularIMC(@RequestBody IMC imc) {
         double peso = imc.getPeso();
         double altura = imc.getAltura();
